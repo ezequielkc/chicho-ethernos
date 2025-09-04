@@ -1,31 +1,13 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
+      "source": "/pessoas",
+      "destination": "/pessoas.html"
     },
     {
-      "src": "*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/pessoas",
-      "dest": "/pessoas.html"
-    },
-    {
-      "src": "/pets",
-      "dest": "/pets.html"
+      "source": "/pets",
+      "destination": "/pets.html"
     }
   ],
   "headers": [
